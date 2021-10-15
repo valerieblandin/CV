@@ -1,0 +1,1866 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Montserrat_Alternates_Light';
+    src: url(../fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf);
+}
+@font-face {
+    font-family: 'Montserrat_Alternates_Medium';
+    src: url(../fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat_Regular';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+body.bodyOrange{
+    background-image: url(../img/seventies_Orange.png);
+    background-color: #f0e8e9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    max-width: 1920px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 10em;
+}
+nav{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-color: #f0e8e9;
+    opacity: .90;
+    padding: 4% 5% 4% 5%;
+    border-radius: 0px 0px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    box-shadow: 10px 10px 10px rgb(152, 140, 131);
+}
+nav img#nom{
+    width: 100%;
+    height: auto;
+}
+nav div#partieInfos{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-top: 15px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+div#infos{
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+    line-height: 2.5em;
+    text-align: end;
+}
+div#infos a{
+    text-decoration: none;
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+}
+div#infos p#mailto{
+    margin-top: 50px;
+}
+nav ul{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    list-style-type: none;
+}
+ul li a{
+    color: #e89d5d;
+    text-decoration: none;
+    font-family: 'Montserrat_Alternates_Medium';
+    font-size: 1.5rem;
+    line-height: 2.8em;
+    transition: .3s ease-in-out;
+    padding-left: 50px;
+}
+ul li a:hover{
+    font-size: 1.7rem;
+    transition: .3s ease-in-out;
+}
+ul#menu li.orange a{
+    color: #e37413;
+}
+.iconBurger{
+    display: none; 
+}
+.iconCross{
+    display: none;
+}
+section{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: #f0e8e9;
+    opacity: .90;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    box-shadow: 10px 10px 10px rgb(152, 140, 131);
+}
+div#photo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#photoMoi{
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    border: #e89d5d solid;
+    border-width: 7em 3em;
+}
+div#presentation{
+    padding-right: 15%;
+    font-family: 'Montserrat_Regular';
+    align-self: center;
+}
+div#presentation p{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+}
+#scroll_to_top {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 50px;
+    right: 30px;
+}
+#scroll_to_top img {
+    width: 100%;
+}
+footer{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    padding: 2% 5%;
+    background-color: #f0e8e9;
+    opacity: .90;
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+    box-shadow: 10px 10px 10px rgb(152, 140, 131);
+}
+div#mentions{
+    padding-top: 2em;
+}
+div#mentions a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: rgb(152, 140, 131);
+}
+div#nom{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/* ========================= PARCOURS ======================= */
+body.bodyBlue{
+    background-image: url(../img/seventies_Blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ul#menu li.blue a{
+    color: #4E6F7F;
+}
+.blue {
+    color: #4E6F7F;
+}
+div.parcours{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: #f0e8e9;
+    opacity: .90;
+    padding: 2% 5% 4% 5%;
+    border-radius: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    box-shadow: 10px 10px 10px rgb(152, 140, 131);
+}
+h1, h2{
+    font-family: 'Montserrat_Regular';
+    color: #4E6F7F;
+    font-size: 2em;
+    padding-top: 2em;
+    text-align: center;
+}
+div.parcours p{
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+div.parcours div#enluminureTitle{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+div.parcours div#enluminureTitle h1{
+    color: #4E6F7F;
+}
+div.parcours div#enluminureIntro{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-weight: 800;
+}
+div.parcours div#enluminureImg{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+}
+#enluminures{
+    width: 100%;
+}
+div.parcours div#enluminureTitre{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    border: #4E6F7F 3px solid;
+    border-radius: 10px;
+    padding: 1em;
+}
+p#enluminureDate{
+    font-size: 1.5rem;
+    color: #4E6F7F;
+}
+p#enluminureText{
+    font-size: 1.3rem;
+}
+div.parcours div#orthoTitle{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+div.parcours div#orthoTitle h2{
+    color: #4E6F7F;
+}
+div.parcours div#orthoIntro{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    text-align: center;
+    font-weight: 800;
+}
+div.parcours div#orthoImg{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    display: flex;
+    align-items: center;
+}
+#nuage{
+    width: 100%;
+}
+div.parcours div#cco{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    border: #4E6F7F 3px solid;
+    border-radius: 10px;
+    padding: 1em;
+}
+p#orthoDate{
+    font-size: 1.5rem;
+    color: #4E6F7F;
+}
+p#orthoText{
+    font-size: 1.3rem;
+}
+div.parcours div#bacTitle{
+    grid-column: 1/3;
+    grid-row: 7/8;
+}
+div.parcours div#bacTitle h2{
+    color: #4E6F7F;
+}
+div.parcours div#bac{
+    grid-column: 1/3;
+    grid-row: 8/9;
+    border: #4E6F7F 3px solid;
+    border-radius: 10px;
+    padding: 1em;
+}
+p#bacDate{
+    font-size: 1.5rem;
+    color: #4E6F7F;
+}
+p#bacText{
+    font-size: 1.3rem;
+}
+
+
+
+
+
+/* ========================= WEB DESIGN ======================= */
+body.bodyRed{
+    background-image: url(../img/seventies_Red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ul#menu li.red a{
+    color: #954d4d;
+}
+.red {
+    color: #954d4d;
+}
+section#webDesign{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: #f0e8e9;
+    opacity: .90;
+    padding: 2% 5% 4% 5%;
+    border-radius: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    box-shadow: 10px 10px 10px rgb(152, 140, 131);
+}
+div#webDesignTitle h1{
+    font-family: 'Montserrat_Regular';
+    color: #954d4d;
+    font-size: 2em;
+    padding-top: 2em;
+    text-align: center;
+}
+section#webDesign div#webDesignTitle{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+section#webDesign div#webDesignIntro{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+div#buttons{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em;
+}
+div#buttons a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div a.btn{
+    width: 30%;
+    padding: .5em;
+    border-radius: 10px;
+    background: rgb(152, 140, 131);
+    transition: .5s;
+}
+a.btn{
+    font-family: 'Montserrat_Regular';
+    text-decoration: none;
+    text-align: center;
+    color: #f0e8e9;
+    font-size: 1.5em;
+}
+a.btn:hover{
+    background: #954d4d;
+    color: #f0e8e9;
+    transition: 1s;
+}
+section#webDesign p{
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+section#webDesign div#webDesignImg{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    border: #954d4d 3px solid;
+    border-radius: 10px;
+}
+#outils{
+    width: 100%;
+}
+section#webDesign div#modules{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+div#modules p.moduleBase{
+    color: #660000;
+}
+.moduleDetail{
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+/* ======= TETRIS ======= */
+div#tetrisContainer{
+    width: auto;
+    height: 700px;
+    border: #660000 3px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+}
+div.imgIcones{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#tetrisApple{
+    background-image: url(../img/Icones/Apple.png);
+    grid-column: 2/3;
+    grid-row: 1/2;
+    animation-name: apple; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  0s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes apple{
+    0%{
+        visibility: visible;
+        grid-column: 2/3;
+        grid-row: 1/2;}
+    20%{grid-row: 2/3;}
+    30%{grid-row: 3/4;}
+    40%{grid-row: 4/5;}
+    50%{grid-row: 5/6;}
+    60%{grid-row: 6/7;}
+    70%{grid-row: 7/8;}
+    80%{grid-row: 8/9;}
+    90%{grid-row: 9/10;}
+    100%{grid-row: 9/10;
+    visibility: visible;}
+}
+
+div#tetrisMicrosoft{
+    background-image: url(../img/Icones/Microsoft.png);
+    grid-column: 6/7;
+    grid-row: 1/2;
+    animation-name: microsoft; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  1s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility:hidden;
+}
+@keyframes microsoft{
+    0%{
+        visibility: visible;
+        grid-column: 6/7;
+        grid-row: 1/2;}
+    20%{grid-row: 2/3;}
+    30%{grid-row: 3/4;}
+    40%{grid-row: 4/5;}
+    50%{grid-row: 5/6;}
+    60%{grid-row: 6/7;}
+    70%{grid-row: 7/8;}
+    80%{grid-row: 8/9;}
+    90%{grid-row: 9/10;}
+    100%{grid-row: 9/10;
+    visibility: visible;}
+}
+div#tetrisCss{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/CSS3.png);
+    animation-name: css; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  2s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes css{
+    0% {visibility: visible;
+        grid-column: 3/4;
+        grid-row: 1/2;}
+    20%{grid-row: 2/3;}
+    30%{grid-row: 3/4;}
+    40%{grid-row: 4/5;}
+    50%{grid-row: 5/6;}
+    60%{grid-row: 6/7;}
+    70%{grid-row: 7/8;}
+    80%{grid-row: 8/9;}
+    90%{grid-row: 9/10;}
+    100%{grid-row: 9/10;
+        visibility: visible;}
+}
+div#tetrisHtml{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/HTML5.png);
+    animation-name: html; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  3s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes html{
+    0% {visibility: visible;
+        grid-column: 4/5;
+        grid-row: 1/2;}
+    20%{grid-row: 2/3;}
+    30%{grid-row: 3/4;}
+    40%{grid-row: 4/5;}
+    50%{grid-row: 5/6;}
+    60%{grid-row: 6/7;}
+    70%{grid-row: 7/8;}
+    80%{grid-row: 8/9;}
+    90%{grid-row: 9/10;}
+    100%{grid-row: 9/10;
+        visibility: visible;}
+}
+div#tetrisXd{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/xd.svg);
+    animation-name: xd; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  4s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes xd{
+    0% {visibility: visible;
+        grid-column: 5/6;
+        grid-row: 1/2;}
+    20%{grid-row: 2/3;}
+    30%{grid-row: 3/4;}
+    40%{grid-row: 4/5;}
+    50%{grid-row: 5/6;}
+    60%{grid-row: 6/7;}
+    70%{grid-row: 7/8;}
+    80%{grid-row: 8/9;}
+    90%{grid-row: 9/10;}
+    100%{grid-row: 9/10;
+        visibility: visible;}
+}
+div#tetrisPhp{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/php.png);
+    animation-name: php; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  5s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes php{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20% {visibility: visible;
+        grid-column: 5/6;
+        grid-row: 1/2;}
+    30%{grid-row: 2/3;}
+    40%{grid-row: 3/4;}
+    50%{grid-row: 4/5;}
+    60%{grid-row: 5/6;}
+    70%{grid-row: 6/7;}
+    80%{grid-row: 7/8;}
+    90%{grid-row: 8/9;}
+    100%{grid-row: 8/9;
+        visibility: visible;}
+}
+div#tetrisBootstrap{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/Bootstrap.png);
+    animation-name: bootstrap; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  6s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes bootstrap{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20% {visibility: visible;
+        grid-column: 3/4;
+        grid-row: 1/2;}
+    30%{grid-row: 2/3;}
+    40%{grid-row: 3/4;}
+    50%{grid-row: 4/5;}
+    60%{grid-row: 5/6;}
+    70%{grid-row: 6/7;}
+    80%{grid-row: 7/8;}
+    90%{grid-row: 8/9;}
+    100%{grid-row: 8/9;
+        visibility: visible;}
+}
+div#tetrisJs{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/JS.png);
+    animation-name: js; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  7s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes js{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20% {visibility: visible;
+        grid-column: 4/5;
+        grid-row: 1/2;}
+    30%{grid-row: 2/3;}
+    40%{grid-row: 3/4;}
+    50%{grid-row: 4/5;}
+    60%{grid-row: 5/6;}
+    70%{grid-row: 6/7;}
+    80%{grid-row: 7/8;}
+    90%{grid-row: 8/9;}
+    100%{grid-row: 8/9;
+        visibility: visible;}
+}
+div#tetrisWp{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/WP.png);
+    animation-name: wp; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  8s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes wp{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    30% {visibility: visible;
+        grid-column: 4/5;
+        grid-row: 1/2;}
+    40%{grid-row: 2/3;}
+    50%{grid-row: 3/4;}
+    60%{grid-row: 4/5;}
+    70%{grid-row: 5/6;}
+    80%{grid-row: 6/7;}
+    90%{grid-row: 7/8;}
+    100%{grid-row: 7/8;
+        visibility: visible;}
+}
+div#tetrisMysql{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/MySQL.png);
+    animation-name: mysql; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  9s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes mysql{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    30% {visibility: visible;
+        grid-column: 5/6;
+        grid-row: 1/2;}
+    40%{grid-row: 2/3;}
+    50%{grid-row: 3/4;}
+    60%{grid-row: 4/5;}
+    70%{grid-row: 5/6;}
+    80%{grid-row: 6/7;}
+    90%{grid-row: 7/8;}
+    100%{grid-row: 7/8;
+        visibility: visible;}
+}
+div#tetrisJquery{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/Jquery.png);
+    animation-name: jquery; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  10s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes jquery{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    30% {visibility: visible;
+        grid-column: 3/4;
+        grid-row: 1/2;}
+    40%{grid-row: 2/3;}
+    50%{grid-row: 3/4;}
+    60%{grid-row: 4/5;}
+    70%{grid-row: 5/6;}
+    80%{grid-row: 6/7;}
+    90%{grid-row: 7/8;}
+    100%{grid-row: 7/8;
+        visibility: visible;}
+}
+div#tetrisDivi{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/Divi.png);
+    animation-name: divi; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  11s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes divi{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    30%{visibility: hidden;}
+    40% {visibility: visible;
+        grid-column: 5/6;
+        grid-row: 1/2;}
+    50%{grid-row: 2/3;}
+    60%{grid-row: 3/4;}
+    70%{grid-row: 4/5;}
+    80%{grid-row: 5/6;}
+    90%{grid-row: 6/7;}
+    100%{grid-row: 6/7;
+        visibility: visible;}
+}
+div#tetrisAi{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/illustrator.svg);
+    animation-name: ai; 
+    animation-duration:  3s;
+    animation-timing-function: linear;
+    animation-delay:  12s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes ai{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    30%{visibility: hidden;}
+    40% {visibility: visible;
+        grid-column: 3/4;
+        grid-row: 1/2;}
+    50%{grid-row: 2/3;}
+    60%{grid-row: 3/4;}
+    70%{grid-row: 4/5;}
+    80%{grid-row: 5/6;}
+    90%{grid-row: 6/7;}
+    100%{grid-row: 6/7;
+        visibility: visible;}
+}
+div#tetrisId{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/indesign.svg);
+    animation-name: id; 
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay:  13s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes id{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    30%{visibility: hidden;}
+    40% {visibility: visible;
+        grid-column: 4/5;
+        grid-row: 1/2;}
+    50%{grid-row: 2/3;}
+    60%{grid-row: 3/4;}
+    70%{grid-row: 4/5;}
+    80%{grid-row: 5/6;}
+    90%{grid-row: 6/7;}
+    100%{grid-row: 6/7;
+        visibility: visible;}
+}
+div#tetrisPs{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/photoshop.svg);
+    animation-name: ps; 
+    animation-duration:  2s;
+    animation-timing-function: linear;
+    animation-delay:  14s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes ps{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    30%{visibility: hidden;}
+    40%{visibility: hidden;}
+    50% {visibility: visible;
+        grid-column: 4/5;
+        grid-row: 1/2;}
+    60%{grid-row: 2/3;}
+    70%{grid-row: 3/4;}
+    80%{grid-row: 4/5;}
+    90%{grid-row: 5/6;}
+    100%{grid-row: 5/6;
+        visibility: visible;}
+}
+div#tetrisAe{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/afterEffects.svg);
+    animation-name: ae; 
+    animation-duration:  2s;
+    animation-timing-function: linear;
+    animation-delay:  15s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes ae{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    30%{visibility: hidden;}
+    40%{visibility: hidden;}
+    50% {visibility: visible;
+        grid-column: 3/4;
+        grid-row: 1/2;}
+    60%{grid-row: 2/3;}
+    70%{grid-row: 3/4;}
+    80%{grid-row: 4/5;}
+    90%{grid-row: 5/6;}
+    100%{grid-row: 5/6;
+        visibility: visible;}
+}
+div#tetrisPr{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url(../img/Icones/premiere.svg);
+    animation-name: pr; 
+    animation-duration:  2s;
+    animation-timing-function: linear;
+    animation-delay:  16s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes pr{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    30%{visibility: hidden;}
+    40%{visibility: hidden;}
+    50%{visibility: hidden;}
+    60% {visibility: visible;
+        grid-column: 4/5;
+        grid-row: 1/2;}
+    70%{grid-row: 2/3;}
+    80%{grid-row: 3/4;}
+    90%{grid-row: 4/5;}
+    100%{grid-row: 4/5;
+        visibility: visible;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= REALISATIONS INDIVIDUELLES ======================= */
+div#buttonsIndiv{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0e8e9;
+    padding: 1.5em;
+    border-radius: 0px 0px 10px 10px;
+}
+div#buttonsIndiv a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#travauxIndiv{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #f0e8e9;
+    padding: 2em;
+    border-radius: 10px 10px 10px 10px;
+}
+h1#titleIndiv{
+    font-family: 'Montserrat_Regular';
+    color: #954d4d;
+    font-size: 2.5em;
+}
+h2.titlesIndiv{
+    font-family: 'Montserrat_Regular';
+    color: #954d4d;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+}
+div p#paraIndiv{
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+    padding-top: 1em;
+    text-align: center;
+}
+div p.parasIndiv{
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+div img.imagesIndiv{
+    width: 100%;
+}
+.imagesIndiv{
+    border: #954d4d 3px solid;
+    border-radius: 10px;
+}
+.parasIndiv{
+    line-height: 2em;
+}
+div#presIndiv{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+
+div#sites{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+div#titleSites{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-top: 2em;
+}
+.flipCard {
+    position: relative; /* Required to absolutely position the child faces */
+    display: flex;
+    justify-content: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;   
+}
+.flipCardFront, .flipCardBack {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flipCardBack {
+    transform: rotateY(180deg);
+    background-color: #f0e8e9;
+    padding: 20px;
+    border: #954d4d 3px solid;
+    border-radius: 10px;
+}
+div.flipCardFront img{
+    width: 409px;
+    border-radius: 10px;
+    border:#954d4d 2px solid ;
+}
+.flipCardBack h2{
+    font-size: 1.5em;
+    color: #954d4d;
+    padding-top: 0.5em;
+    text-align: left;
+}
+p.parasSites{
+    font-family: 'Montserrat_Regular';
+    font-size: 1em;
+    color: rgb(152, 140, 131);
+    padding-top: 1.5em;
+    text-align: left;
+}
+.button{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-top: 2.5em;
+}
+a.btn{
+    width: 30%;
+    border-radius: 10px;
+    background: rgb(152, 140, 131);
+    transition: .5s;
+    font-family: 'Montserrat_Regular';
+    text-decoration: none;
+    text-align: center;
+    color: #f0e8e9;
+    font-size: 1em;
+}
+a.btn:hover{
+    background: #954d4d;
+    color: #f0e8e9;
+    transition: 1s;
+}
+/* Bankno */
+.banknoFlipCardContainer {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-top: 30px;
+    min-width: 204px;
+    max-width: 613px;
+    height: 350px;
+    perspective: 1000px;
+}
+.banknoFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
+}
+/* Village de Noël */
+.villageFlipCardContainer{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 30px;
+    min-width: 204px;
+    max-width: 613px;
+    height: 350px;
+    perspective: 1000px;
+}
+.villageFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
+}
+/* Blog Legenda */
+.blogFlipCardContainer{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-top: 30px;
+    min-width: 204px;
+    max-width: 613px;
+    height: 350px;
+    perspective: 1000px;
+}
+.blogFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
+}
+/* Portfolio */
+.portfolioFlipCardContainer{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding-top: 30px;
+    min-width: 204px;
+    max-width: 613px;
+    height: 350px;
+    perspective: 1000px;
+}
+.portfolioFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
+}
+/* Savoir-VA */
+.savoirFlipCardContainer{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    padding-top: 30px;
+    min-width: 204px;
+    max-width: 100%;
+    height: 350px;
+    perspective: 1000px;
+}
+.savoirFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
+}
+
+
+/* Harmonies */
+div#harmoniesDCo{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: auto;
+}
+div#titleHarmonies{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-top: 2em;
+}
+div#paraHarmonies{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 2em;
+}
+a#imgHarmonies{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+}
+.lightbox img{
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 2%;
+}
+.lightbox:target{
+    outline: none;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================= REALISATIONS EN GROUPE ======================= */
+div#buttonsGroupe{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0e8e9;
+    padding: 4em;
+    border-radius: 0px 0px 10px 10px;
+}
+div#buttonsGroupe a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#travauxGroupe{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #f0e8e9;
+    padding: 2em;
+    border-radius: 10px 10px 10px 10px;
+}
+h1#titleGroupe{
+    font-family: 'Montserrat_Regular';
+    color: #954d4d;
+    font-size: 2.5em;
+}
+h2.titlesGroupe{
+    font-family: 'Montserrat_Regular';
+    color: #954d4d;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+}
+div p#paraGroupe{
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+div p.parasGroupe{
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+div img.imagesGroupe{
+    width: 100%;
+}
+.imagesGroupe{
+    border: #954d4d 3px solid;
+    border-radius: 10px;
+}
+.parasGroupe{
+    line-height: 2em;
+}
+div#presGroupe{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3em;
+}
+/* Harmonies */
+div#pizzeria{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: auto;
+}
+div#titlePizzeria{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-top: 2em;
+}
+div#paraPizzeria{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 2em;
+}
+a#imgPizzeria{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+/* Bankno */
+div#banknoGroupe{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: auto;
+}
+div#titleBanknoG{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-top: 2em;
+}
+div#paraBanknoG{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 2em;
+}
+div#imgBanknoG{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 2em;
+}
+/* Ambiance Jardin */
+div#ambianceJardin{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: auto;
+}
+div#titleJardin{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-top: 2em;
+}
+div#paraJardin{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 2em;
+}
+div#imgJardin{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 2em;
+}
+/* Shifumi */
+div#shifumi{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: auto;
+}
+div#titleShifumi{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-top: 2em;
+}
+div#paraShifumi{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 2em;
+}
+div#imgShifumi{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================= ET PLUS ======================= */
+body.bodyGreen{
+    background-image: url(../img/seventies_Green.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ul#menu li.green a{
+    color: #4d8363;
+}
+.green{
+    color: #4d8363;
+}
+section#divers{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 5%;
+}
+h1#competencesTitle{
+    font-family: 'Montserrat_Regular';
+    color: #4d8363;
+    font-size: 2.5em;
+    padding-top: 0.5em;
+}
+h2.paraTitle{
+    font-family: 'Montserrat_Regular';
+    color: #4d8363;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+}
+section#divers div{
+    border: #4d8363 3px solid;
+    border-radius: 10px;
+}
+section#divers div#competences{
+    grid-column: 6/10;
+    grid-row: 1/4;
+    display: flex;
+    align-self:flex-start;
+    justify-content: center;
+    border: none;
+}
+div#experiencesText{
+    grid-column: 1/6;
+    grid-row: 2/4;
+}
+div#experiencesText p{
+    padding: 3% 15% 3% 8%;
+}
+div#langues{
+    grid-column: 5/10;
+    grid-row: 3/5;
+}
+div#langues p{
+    padding: 10% 15% 3% 8%;
+}
+div#atouts{
+    grid-column: 10/12;
+    grid-row: 2/5;
+}
+div#atouts p{
+    padding: 20% 8% 20% 10%;
+}
+div#interets{
+    grid-column: 1/5;
+    grid-row: 4/5;
+}
+div#interets p{
+    padding: 3% 15% 3% 8%;
+}
+section div p{
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131);
+    font-size: 1.2em;
+}
+section div#mmImg{
+    grid-column: 1/12;
+    grid-row: 5/6;
+}
+#mapImage{
+    width: 100%;
+}
+section div#carre{
+    grid-column: 5/6;
+    grid-row: 3/4;
+    background-color: #f0e8e9;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0px 10px 0px;
+}
+div.carre{
+    width: 60%;
+    height: 60%;
+    border: #4d8363;
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================= MENTIONS LEGALES ======================= */
+section#mentionsLegales{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 2% 5% 4% 5%;
+}
+section#mentionsLegales div#buttons{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+section#mentionsLegales h1, h2, h3{
+    color: #e89d5d;
+}
+section#mentionsLegales h3{
+    padding-top: 3%;
+}
+section#mentionsLegales ul li{
+    font-family: 'Montserrat_Regular';
+    color: rgb(152, 140, 131)
+}
+section#mentionsLegales ul li a{
+    font-size: 1em;
+}
+section#mentionsLegales p{
+    color: rgb(152, 140, 131);
+    font-family: 'Montserrat_Regular';
+    padding-top: 4%;
+}
+div a#btnRetour{
+    border: #e89d5d 3px solid;
+}
+a#btnRetour:hover{
+    background: #e89d5d;
+}
+
+
+
+
+
+
+
+
+
+/* =================== MEDIA QUERIES ================= */
+
+/* ================== 1000px ====================== */
+@media screen and (max-width: 1000px) {
+
+    /* ========= PAGE 1 ========= */
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    nav div#partieInfos{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    nav ul{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    ul li a{
+        padding-left: 0px;
+    }
+    ul#menu li{
+        display: none;
+    }
+    ul#menu li.iconBurger{
+        display: block;
+        cursor: pointer;
+    }
+    ul#menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-bars {
+        font-size: 80px;
+    }
+    ul#menu.responsive li{
+        display: block;
+    }
+    ul#menu.responsive{
+        position: relative;
+        background-color: #f0e8e9;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-right: 0;
+        transform: translateY(10px);
+        transition: 1s;
+    }
+    ul#menu.responsive li.iconBurger{
+        display: none;
+    }
+    ul#menu.responsive li.iconCross{
+        display: block;
+    }
+    i.fa-times-circle{
+        font-size: 60px;
+    }
+    ul li a:hover{
+        font-size: 1.5rem;
+        transition: none;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    div#photo{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-bottom: 5em;
+    }
+    div#presentation{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 5em;
+    }
+    div#presentation p{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+
+    /* ========= PAGE 2 ========= */
+    div.parcours{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    div.parcours div#enluminureTitle{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    div.parcours div#enluminureIntro{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    div.parcours div#enluminureImg{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    div.parcours div#enluminureTitre{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    div.parcours div#orthoTitle{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    div.parcours div#orthoIntro{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    div.parcours div#orthoImg{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    div.parcours div#cco{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    div.parcours div#bacTitle{
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+    div.parcours div#bac{
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+
+
+    /* ========= PAGE 3 ========= */
+    section#webDesign{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    section#webDesign div#webDesignTitle{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    section#webDesign div#webDesignIntro{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    section#webDesign div#buttons{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    section#webDesign div#modules{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    div a.btn{
+        background-color: rgb(152, 140, 131);
+        color: #f0e8e9;
+    }
+
+    /* ========= PAGE 4 ========= */
+    div#travauxIndiv{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    div#travauxIndiv a{
+        cursor: default;
+    }
+    div#travauxIndiv div#harmoniesDCo{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+    }
+    div#travauxIndiv div#bankno{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+    }
+    div#travauxIndiv div#villageNoel{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: column;
+    }
+    div#travauxIndiv div#blogLegenda{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        display: flex;
+        flex-direction: column;
+    }
+    div#travauxIndiv div#portfolio{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ========= PAGE 5 ========= */
+    div#travauxGroupe{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    div#travauxGroupe a{
+        cursor: default;
+    }
+    div#travauxGroupe div#pizzeria{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+    }
+    div#travauxGroupe div#banknoGroupe{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+    }
+    div#travauxGroupe div#ambianceJardin{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: column;
+    }
+    div#travauxGroupe div#shifumi{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ========= PAGE 6 ========= */
+    section#divers{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    section#divers div#competences{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: center;
+    }
+    section#divers div#experiencesText{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    section#divers div#langues p{
+        padding: 2% 2% 2% 8%;
+    }
+    section#divers div#langues{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    section#divers div#atouts{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    section#divers div#atouts p{
+        padding: 2% 2% 2% 8%;
+    }
+    section#divers div#interets{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    section#divers div#mmImg{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    section div#carre{
+        display: none;
+    }
+    #scroll_to_top {
+        display: none;
+}
+
+/* ================== 900px ====================== */
+@media screen and (max-width: 900px) {
+    section#webDesign div#buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div a.btn{
+        width: 70%;
+    }
+    div#buttons a{
+        margin-top: 20px;
+    }
+    div.container div#buttonsIndiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div#buttonsIndiv a{
+        margin-top: 20px;
+    }
+    div.container div#buttonsGroupe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div#buttonsGroupe a{
+        margin-top: 20px;
+    }
+}
+
+/* ================== 600px ====================== */
+@media screen and (max-width: 600px) {
+    div a.btn{
+        font-size: 1.2em;
+        padding: 1em;
+    }
+}
+
+
+/* ================== 400px ====================== */
+@media screen and (max-width: 400px) {
+    h1#competencesTitle{
+        font-size: 2em;
+    }
+    h2.paraTitle{
+        font-size: 1.5em;
+    }
+    div a.btn{
+        width: 90%;
+        font-size: 0.8em;
+        padding: 0.8em;
+    }
+}

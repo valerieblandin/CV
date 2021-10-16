@@ -366,7 +366,8 @@ div#buttons a{
     align-items: center;
 }
 div a.btn{
-    width: 30%;
+    width: 15%;
+    height: 80%;
     padding: .5em;
     border-radius: 10px;
     background: rgb(152, 140, 131);
@@ -984,22 +985,6 @@ div p#paraIndiv{
     padding-top: 1em;
     text-align: center;
 }
-div p.parasIndiv{
-    font-family: 'Montserrat_Regular';
-    color: rgb(152, 140, 131);
-    font-size: 1.2em;
-    padding-top: 1em;
-}
-div img.imagesIndiv{
-    width: 100%;
-}
-.imagesIndiv{
-    border: #954d4d 3px solid;
-    border-radius: 10px;
-}
-.parasIndiv{
-    line-height: 2em;
-}
 div#presIndiv{
     grid-column: 1/3;
     grid-row: 1/2;
@@ -1009,7 +994,7 @@ div#presIndiv{
     padding-bottom: 3em;
 }
 
-
+/* SITES */
 div#sites{
     grid-column: 1/3;
     grid-row: 3/4;
@@ -1020,14 +1005,14 @@ div#sites{
 div#titleSites{
     grid-column: 1/3;
     grid-row: 1/2;
-    padding-top: 2em;
+    padding: 2em;
 }
 .flipCard {
-    position: relative; /* Required to absolutely position the child faces */
+    position: relative; /* Pour la position en face à face */
     display: flex;
     justify-content: center;
     transition: transform 1s;
-    transform-style: preserve-3d;   
+    transform-style: preserve-3d;  
 }
 .flipCardFront, .flipCardBack {
     position: absolute;
@@ -1036,6 +1021,8 @@ div#titleSites{
 }
 .flipCardBack {
     transform: rotateY(180deg);
+    width: 409px;
+    max-height: 350px;
     background-color: #f0e8e9;
     padding: 20px;
     border: #954d4d 3px solid;
@@ -1060,6 +1047,7 @@ p.parasSites{
     text-align: left;
 }
 .button{
+    text-decoration: none;
     width: 100%;
     height: 30px;
     text-align: center;
@@ -1086,8 +1074,7 @@ a.btn:hover{
     grid-column: 1/2;
     grid-row: 2/3;
     padding-top: 30px;
-    min-width: 204px;
-    max-width: 613px;
+    width: 100%;
     height: 350px;
     perspective: 1000px;
 }
@@ -1099,8 +1086,7 @@ a.btn:hover{
     grid-column: 2/3;
     grid-row: 2/3;
     padding-top: 30px;
-    min-width: 204px;
-    max-width: 613px;
+    width: 100%;
     height: 350px;
     perspective: 1000px;
 }
@@ -1112,9 +1098,8 @@ a.btn:hover{
     grid-column: 1/2;
     grid-row: 3/4;
     padding-top: 30px;
-    min-width: 204px;
-    max-width: 613px;
-    height: 350px;
+    width: 100%;
+    height: 350px;;
     perspective: 1000px;
 }
 .blogFlipCardContainer:hover .flipCard {
@@ -1125,8 +1110,7 @@ a.btn:hover{
     grid-column: 2/3;
     grid-row: 3/4;
     padding-top: 30px;
-    min-width: 204px;
-    max-width: 613px;
+    width: 100%;
     height: 350px;
     perspective: 1000px;
 }
@@ -1138,8 +1122,7 @@ a.btn:hover{
     grid-column: 1/3;
     grid-row: 4/5;
     padding-top: 30px;
-    min-width: 204px;
-    max-width: 100%;
+    width: 100%;
     height: 350px;
     perspective: 1000px;
 }
@@ -1148,51 +1131,54 @@ a.btn:hover{
 }
 
 
-/* Harmonies */
-div#harmoniesDCo{
+/* DESIGN */
+div#design{
     grid-column: 1/3;
-    grid-row: 2/3;
+    grid-row: 5/6;
     display: grid;
-    grid-template-columns: 4fr 3fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
-div#titleHarmonies{
+div#titleDesign{
     grid-column: 1/3;
-    grid-row: 1/2;
-    padding-top: 2em;
-}
-div#paraHarmonies{
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 5/6;
     padding: 2em;
 }
-a#imgHarmonies{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding: 2em;
-    display: flex;
-    align-items: center;
-    transition: 1s ease-in-out;
-}
-.lightbox{
-    display: none;
-    position: fixed;
-    z-index: 999;
+/* Harmonies */
+.harmoniesFlipCardContainer{
+    grid-column: 1/3;
+    grid-row: 7/8;
+    padding-top: 30px;
     width: 100%;
-    height: 100%;
-    text-align: center;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .9);
+    height: 350px;
+    perspective: 1000px;
 }
-.lightbox img{
-    max-width: 90%;
-    max-height: 90%;
-    margin-top: 2%;
+.flipCard:hover {
+    transform: rotateY(180deg);
 }
-.lightbox:target{
-    outline: none;
-    display: block;
+/* Charte graphique */
+.charteFlipCardContainer{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    padding-top: 30px;
+    width: 100%;
+    height: 350px;
+    perspective: 1000px;
+}
+.charteFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
+}
+/* Typo */
+.typoFlipCardContainer{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    padding-top: 30px;
+    width: 100%;
+    height: 350px;
+    perspective: 1000px;
+}
+.typoFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
 }
 
 
@@ -1204,7 +1190,8 @@ a#imgHarmonies{
 
 
 
-/* ========================= REALISATIONS EN GROUPE ======================= */
+
+/* ========================= REALISATIONS DE GROUPE ======================= */
 div#buttonsGroupe{
     grid-column: 2/4;
     grid-row: 1/2;
@@ -1271,100 +1258,54 @@ div#presGroupe{
     align-items: center;
     padding-bottom: 3em;
 }
-/* Harmonies */
-div#pizzeria{
-    grid-column: 1/3;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: 4fr 3fr;
-    grid-template-rows: auto;
-}
-div#titlePizzeria{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    padding-top: 2em;
-}
-div#paraPizzeria{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding: 2em;
-}
-a#imgPizzeria{
+/* Pizzeria */
+.pizzeriaFlipCardContainer{
     grid-column: 1/2;
     grid-row: 2/3;
-    padding: 2em;
-    display: flex;
-    align-items: center;
-    transition: 1s ease-in-out;
+    padding-top: 30px;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
 }
+.pizzeriaFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
+}
+
 /* Bankno */
-div#banknoGroupe{
-    grid-column: 1/3;
-    grid-row: 3/4;
-    display: grid;
-    grid-template-columns: 3fr 4fr;
-    grid-template-rows: auto;
-}
-div#titleBanknoG{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    padding-top: 2em;
-}
-div#paraBanknoG{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding: 2em;
-}
-div#imgBanknoG{
+.banknoGFlipCardContainer{
     grid-column: 2/3;
     grid-row: 2/3;
-    padding: 2em;
+    padding-top: 30px;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+}
+.banknoGFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
 }
 /* Ambiance Jardin */
-div#ambianceJardin{
-    grid-column: 1/3;
-    grid-row: 4/5;
-    display: grid;
-    grid-template-columns: 4fr 3fr;
-    grid-template-rows: auto;
-}
-div#titleJardin{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    padding-top: 2em;
-}
-div#paraJardin{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding: 2em;
-}
-div#imgJardin{
+.ambianceFlipCardContainer{
     grid-column: 1/2;
-    grid-row: 2/3;
-    padding: 2em;
+    grid-row: 3/4;
+    padding-top: 30px;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+}
+.ambianceFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
 }
 /* Shifumi */
-div#shifumi{
-    grid-column: 1/3;
-    grid-row: 5/6;
-    display: grid;
-    grid-template-columns: 3fr 4fr;
-    grid-template-rows: auto;
-}
-div#titleShifumi{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    padding-top: 2em;
-}
-div#paraShifumi{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding: 2em;
-}
-div#imgShifumi{
+.shifumiFlipCardContainer{
     grid-column: 2/3;
-    grid-row: 2/3;
-    padding: 2em;
+    grid-row: 3/4;
+    padding-top: 30px;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+}
+.shifumiFlipCardContainer:hover .flipCard {
+    transform: rotateY(180deg);
 }
 
 
@@ -1701,33 +1642,73 @@ a#btnRetour:hover{
     div#travauxIndiv a{
         cursor: default;
     }
-    div#travauxIndiv div#harmoniesDCo{
+    div#sites{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    div#sites div#titleSites{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+    }
+    div#sites div.banknoFlipCardContainer{
         grid-column: 1/2;
         grid-row: 2/3;
         display: flex;
         flex-direction: column;
     }
-    div#travauxIndiv div#bankno{
+    div#sites div.villageFlipCardContainer{
         grid-column: 1/2;
         grid-row: 3/4;
         display: flex;
         flex-direction: column;
     }
-    div#travauxIndiv div#villageNoel{
+    div#sites div.blogFlipCardContainer{
         grid-column: 1/2;
         grid-row: 4/5;
         display: flex;
         flex-direction: column;
     }
-    div#travauxIndiv div#blogLegenda{
+    div#sites div.portfolioFlipCardContainer{
         grid-column: 1/2;
         grid-row: 5/6;
         display: flex;
         flex-direction: column;
     }
-    div#travauxIndiv div#portfolio{
+    div#sites div.savoirFlipCardContainer{
         grid-column: 1/2;
         grid-row: 6/7;
+        display: flex;
+        flex-direction: column;
+    }
+    div#design{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    div#design div#titleDesign{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+    }
+    div#design div.typoFlipCardContainer{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+    }
+    div#design div.charteFlipCardContainer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+    }
+    div#design div.harmoniesFlipCardContainer{
+        grid-column: 1/2;
+        grid-row: 4/5;
         display: flex;
         flex-direction: column;
     }
@@ -1741,25 +1722,25 @@ a#btnRetour:hover{
     div#travauxGroupe a{
         cursor: default;
     }
-    div#travauxGroupe div#pizzeria{
+    div#travauxGroupe div.pizzeriaFlipCardContainer{
         grid-column: 1/2;
         grid-row: 2/3;
         display: flex;
         flex-direction: column;
     }
-    div#travauxGroupe div#banknoGroupe{
+    div#travauxGroupe div.banknoGFlipCardContainer{
         grid-column: 1/2;
         grid-row: 3/4;
         display: flex;
         flex-direction: column;
     }
-    div#travauxGroupe div#ambianceJardin{
+    div#travauxGroupe div.ambianceFlipCardContainer{
         grid-column: 1/2;
         grid-row: 4/5;
         display: flex;
         flex-direction: column;
     }
-    div#travauxGroupe div#shifumi{
+    div#travauxGroupe div.shifumiFlipCardContainer{
         grid-column: 1/2;
         grid-row: 5/6;
         display: flex;
